@@ -35,6 +35,7 @@ import chair_02 from "./chair_01.jpeg";
 import add_icon from "./add_icon.png";
 import order_icon from "./order_icon.png";
 import product_icon from "./product_icon.png";
+import upload_area from "./upload_area.jpg";
 export const assets = {
   logo,
   search_icon,
@@ -57,6 +58,7 @@ export const assets = {
   add_icon,
   order_icon,
   product_icon,
+  upload_area,
 };
 // export const products = [
 //   {

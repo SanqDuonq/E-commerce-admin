@@ -3,12 +3,13 @@ import { useState } from "react";
 const login = () => {
   const [email, setEmail] = useState(``);
   const [password, setPassword] = useState(``);
-  const onsubmitHandler = async (e) => {
-    try {
-      e.preventDefaults();
-      console.log(email, password);
-    } catch (error) {}
-  };
+  // const onsubmitHandler = async (e) => {
+  //   try {
+  //     e.preventDefaults();
+  //     const response = await axios;
+  //     // console.log(email, password);
+  //   } catch (error) {}
+  // };
   return (
     <div className="min-h-screen flex items-center justify-center w-full">
       <div className="bg-white shadow-md rounded-lg px-8 py-6 max-w-md">
@@ -19,11 +20,11 @@ const login = () => {
               Email Address
             </p>
             <input
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
               className="rounded-md w-full px-3 py-2 border border-gray-300 outline-none"
-              type="email"
               placeholder="your@gmail.com"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
